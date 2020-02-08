@@ -1,0 +1,32 @@
+https://baijiahao.baidu.com/s?id=1614315147318014493&wfr=spider&for=pc
+
+1、cd /home 到home目录下
+
+2、mkdir Go 创建一个Golang的目
+tar xvf go1.12
+设置环境变量：
+
+5、vi ~/.bashrc
+
+6、添加：
+
+export GOROOT=/home/go/go
+
+export PATH=$GOROOT/bin:$PATH
+
+export GOPATH=/home/go/go-project
+
+export PATH=$PATH:$GOPATH/bin
+7、填完执行：source ~/.bashrc
+
+$ go get -u github.com/astaxie/beego
+$ go get -u github.com/beego/bee
+4、测试：cd $GOPATH/src
+
+5、bee new class
+
+successfully，测试ok~
+
+6、cd class 进入class目录
+
+7、go run main.go 运行mian.go文件
