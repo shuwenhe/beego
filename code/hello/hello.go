@@ -11,6 +11,6 @@ func (this *MainController)Get()  {
 }
 
 func main()  {
-	beego.Router("/",&MainController{})
+	beego.Router("/",&MainController{}) // Router函数的两个参数函数，第一个是路径，第二个是Controller的指针
 	beego.Run()
 }
